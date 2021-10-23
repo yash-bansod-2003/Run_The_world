@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('img/Background/background.jpg');
+    background-repeat: repeat-x;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 60vw;
+}
+
+.imgBox {
+    position: absolute;
+    height: 200px;
+    bottom: 107px;
+    left: 423px;
+}
+
+.imgBox img {
+    height: 200px;
+}
+
+.scoreDiv {
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    right: 10px;
+}
+
+.developerInfo {
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(5, 5, 5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    top: 90px;
+    opacity: 0.2;
+}
+
+.score {
+    font-weight: bolder;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 227px;
+    left: 180px;
+}
+
+.walkWolf {
+    position: absolute;
+    bottom: 49px;
+    left: 54vw;
+}
+
+.walkWolf img {
+    height: 150px;
+}
+
+.wolfAnimate {
+    animation: wolfRun 2s linear infinite;
+}
+
+#jump {
+    height: 30px;
+    width: 100px;
+    color: black;
+    font-weight: bolder;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 30px;
+}
+
+@keyframes wolfRun {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: -10vw;
+    }
+}
+
+.gameOver {
+    height: 400px;
+    width: 600px;
+    background-image: url('img/Background/gameOver.jpg');
+    background-repeat: repeat-x;
+    background-size: 600px 400px;
+    position: absolute;
+    top: calc(50vh - 193px);
+    left: calc(50vw - 300px);
+    z-index: 20;
+    visibility: hidden;
+}
+
+.gameOver img {
+    width: 100%;
+    position: absolute;
+    bottom: -25px;
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30%;
+}
+
+#btn2 {
+    position: absolute;
+    bottom: 20px;
+    left: 90px;
+}
+
+#btn3 {
+    position: absolute;
+    bottom: 20px;
+    right: 90px;
+}
